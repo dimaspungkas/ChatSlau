@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_normal"
+    android:paddingRight="@dimen/margin_avg"
+    android:paddingLeft="@dimen/margin_avg">
+
+    <EditText
+        android:id="@+id/edt_saran"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:gravity="start|top"
+        android:hint="@string/saran"
+        android:fontFamily="@font/poppins_light"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_saran"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/send"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

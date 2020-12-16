@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_min"
+    android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_min"
+            android:paddingRight="@dimen/margin_min"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+</LinearLayout>

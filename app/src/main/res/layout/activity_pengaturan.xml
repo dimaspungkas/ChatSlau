@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_avg"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small"
+    android:background="@color/white2"
+    tools:context=".setting.Pengaturan">
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:text="@string/info"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_pertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_info"
+        android:padding="@dimen/margin_small"
+        android:text="@string/pertanyaan"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pertanyaan"
+        android:padding="@dimen/margin_small"
+        android:text="@string/terms"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_terms"
+        android:padding="@dimen/margin_small"
+        android:text="@string/policy"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_bantuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_policy"
+        android:padding="@dimen/margin_small"
+        android:text="@string/help"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_umum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bantuan"
+        android:padding="@dimen/margin_small"
+        android:text="@string/umum"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_blocked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_umum"
+        android:padding="@dimen/margin_small"
+        android:text="@string/blocked"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_tentang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_blocked"
+        android:padding="@dimen/margin_small"
+        android:text="@string/tentang"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_saran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tentang"
+        android:padding="@dimen/margin_small"
+        android:text="@string/kritik"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_saran"
+        android:padding="@dimen/margin_small"
+        android:text="@string/contact"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_contact"
+        android:padding="@dimen/margin_small"
+        android:text="@string/version"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+</RelativeLayout>

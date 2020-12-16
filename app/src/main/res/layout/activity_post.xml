@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margin_normal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".activity.PostActivity">
+
+    <EditText
+        android:id="@+id/edt_post"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:gravity="start|top"
+        android:hint="@string/syarat"
+        android:fontFamily="@font/poppins_light"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_post"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/post"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/kota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

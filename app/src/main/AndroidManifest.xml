@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chatslau">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WelcomeActivity"
+            android:theme="@style/AppTheme.2"/>
+        <activity android:name=".activity.PilihNama" />
+        <activity
+            android:name=".user.Login" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".setting.Bantuan"
+            android:parentActivityName=".setting.Pengaturan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".setting.Kritik_Saran"
+            android:parentActivityName=".setting.Pengaturan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".setting.Pengaturan"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.RoomChatActivity" />
+        <activity
+            android:name=".activity.StoryActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PostActivity"
+            android:parentActivityName=".activity.StoryActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.DetailPostActivity"
+            android:parentActivityName=".activity.StoryActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.RoomNameActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".user.ProfileActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".setting.Blokir"
+            android:parentActivityName=".setting.Pengaturan"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7725286775463328~5794514908" />
+
+        <service
+            android:name=".notification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notification.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
